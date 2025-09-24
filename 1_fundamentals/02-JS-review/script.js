@@ -196,7 +196,10 @@ console.log(updatedBook);
 // Template literals
 const summary = `${title} a ${pages}-page book, was written by ${author} nad published in ${
   publicationDate.split("-")[0]
-}`;
+}. The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a movie.`;
 console.log(summary);
 
 // Ternary operator
+const pagesRange = pages > 1000 ? "over a 1000" : "less than 1000";
+console.log(pagesRange);
+console.log(`The book has ${pagesRange} pages`);
