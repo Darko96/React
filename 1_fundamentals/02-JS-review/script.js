@@ -203,3 +203,16 @@ console.log(summary);
 const pagesRange = pages > 1000 ? "over a 1000" : "less than 1000";
 console.log(pagesRange);
 console.log(`The book has ${pagesRange} pages`);
+
+// Arrow funkcije
+// Obicna funkcija
+function getYear2(str) {
+  return str.split("-")[0];
+}
+console.log(getYear2(publicationDate));
+
+// Arrow funkcija
+// Unutar zagrade se stavlja argument koji se prosledjuje funkciji
+// a posle znaka => se stavlja ono sto funkcija vraca
+const getYear = (str) => str.split("-")[0];
+console.log(getYear(publicationDate));
