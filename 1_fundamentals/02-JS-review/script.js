@@ -216,3 +216,26 @@ console.log(getYear2(publicationDate));
 // a posle znaka => se stavlja ono sto funkcija vraca
 const getYear = (str) => str.split("-")[0];
 console.log(getYear(publicationDate));
+
+// Short-Circuiting And Logical Operators: &&, ||, ??
+
+// &&
+// kada je prva vrednost falsa, vraca prvu vrednost
+// kada je prva vrednost true, vraca drugu vrednost, ovo je korisno, jel moze da se koristi kao mini IF statement
+console.log(true && "Some string");
+console.log(false && "Some string");
+
+// ||
+// kada je prva vrednost true, vraca prvu vrednost
+// kada je prva vrednost falsa, vraca drugu vrednost
+console.log("Some string" || false);
+console.log(false || "Some string");
+
+// ?? (nullish coalescing operator)
+// kada je prva vrednost true, vraca prvu vrednost
+// kada je prva vrednost null ili undefined, vraca drugu vrednost
+const count = book.reviews.librarything.reviewsCount ?? "no data";
+console.log(count);
+console.log(true ?? "no data");
+
+// Optional Chaining
